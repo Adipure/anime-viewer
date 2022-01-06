@@ -82,8 +82,8 @@ async function renderPost({ id, title, image, rating, synopsis }) {
 
 async function renderPosts() {
 
-  const { animes } = await getProfile()
-  animes.forEach(anime => renderPost(anime))
+  const { anime } = await getProfile()
+  anime.forEach(anime => renderPost(anime))
 
 }
 
